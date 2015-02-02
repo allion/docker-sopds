@@ -5,7 +5,7 @@ if [ ! -f /sopds-master/db/created ]; then
 sleep 10s
 /sopds-master/db/db_create.sh
 touch /sopds-master/db/created
-sleep 10s
+sleep 5s
 killall mysqld_safe
 fi
 supervisord -n
